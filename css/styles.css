@@ -1,0 +1,146 @@
+/*по html 1*/
+/*цвет основного текста color: #757575;*/
+/*цвет текста второстепенный  color: #212121;*/
+/*цвет текста заголовка h1, кнопки и почт.адреса color: #FFFFFF;*/
+/*цвет текста мыла и телефон в футере color: rgba(255, 255, 255, 0.6);*/
+/*цвет текста части логотипа color: #2196F3;*/
+/*акцент текста на макете при наведении мышки #2196F3*/
+
+/*1. цвет фона основной белый  background: #FFFFFF ;*/
+/*2. цвет фона вторичный серый(длок наша команда) background: #F5F4FA;*/
+/*3. цвет фона блока особенности background: #E5E5E5*/
+/*4. цвет фона синий(главный блок и футер) background: #2F303A*/
+
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-white-color: #F5F4FA;
+}
+
+body {
+    background-color: #E5E5E5;
+    color: var(--primary-text-color); /*было #757575*/
+}
+
+/*убираем точечки*/
+ul {
+    list-style: none;
+}
+
+
+
+/* ЛОГО*/
+.logo {
+    color: var(--title-text-color); /*было #212121*/
+}
+.logo:hover {
+    color: var(--accent-color); /*было #2196F3*/
+} 
+ 
+
+/*site-nav*/
+.site-nav .link {
+    color: var(--title-text-color); /*было #212121*/
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--accent-color); /*было 2196F3*/
+}
+
+/*.site-nav .link.current{
+    color: var(--accent-color);
+}*/
+
+.site-contacts a {
+    color: var(--primary-text-color); /*было #757575*/
+}
+.site-contacts a:hover,
+.site-contacts a:focus {
+    color: var(--accent-color); /*было #2196F3*/
+}
+
+
+/*HERO*/
+.hero-title {
+    color: #FFFFFF;
+}
+
+/*SECTION FEATURES, OCCUPATION*/
+.section-title {
+    color: var(--title-text-color) ; /*было #212121*/
+} /* или в html все section заменить на features,
+occupation, team, а в заголовках: features-title, occupation-title, team-title*/
+
+/*FEATURES LIST*/
+.feature-list, .title {
+    color: var(--title-text-color); /*было #212121*/
+}
+
+.team-list, .title {
+    color: var(--title-text-color); /*было #212121*/
+}
+
+.team-list, p {
+    color: var(--primary-text-color); /*было #757575*/
+}
+
+/*HTML portfolio*/
+
+/*Work examples*/
+.work-list, .title {
+    color: var(--title-text-color); /*было #212121*/
+}
+
+/*Button*/
+
+.button {
+    color: var(--primary-white-color) ;
+    background-color: var(--accent-color) ;
+}
+
+.button {
+    color: #212121;
+    background-color:#F5F4FA;
+}
+
+.button-primary {}
+.button-secondary {}
+
+.button:hover {
+    background-color:#2196F3;
+    color: #FFFFFF;
+}
+
+/*.button:hover {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}*/
+
+.hero-button {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+
+
+/*.button {
+    color: var(--title-text-color);
+    background-color: var(--primary-white-color);
+.button.primary {
+        background-color: var(--primary-white-color);
+        color: var(--accent-color);
+    }
+
+    .button.secondary {
+        background-color: var(--accent-color;
+                color: var(--primary-white-color);
+}*/
+
+/*<button type="button" class="button">Заказать услугу</button>*/
+
+/*ФУТЕР, меняем цвет текста почт. адреса*/
+.address {
+    color: #FFFFFF;
+}
